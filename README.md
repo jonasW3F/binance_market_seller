@@ -5,7 +5,7 @@ By using this script, you give it access to your Binance account. I do not take 
 
 ## What it does
 
-This simple script will show you your current DOT balance and the current DOT price and offers your to place a market-sell-order with a specified amount. After a successful trade it provides you the information about your profit and the paid fees. Note: To reduce trading fees it is advised to have BNB tokens in your account.
+This simple script will sell a user-specified amount of DOT tokens for EUR as a market-sell-order. Before doing so, it first shows your DOT balance and the current DOT price. After a successful trade it provides you the information about your profit and the paid fees. Note: To reduce trading fees it is advised to have BNB tokens in your account.
 
 ## Installation
 
