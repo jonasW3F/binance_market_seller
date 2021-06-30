@@ -31,7 +31,7 @@ print("The DOT price is currently " + str(dot_price) + "EUR")
 sell_amount_dot = float(input("How many DOT to you want to sell? "))
 
 # There seems to be a minimum of 0.8 DOT which can be sold
-if(sell_amount_dot >= 0.8):
+if(sell_amount_dot >= 0.8 & sell_amount_dot <= dot_balance):
     try:
         market_order = client.order_market_sell(
         symbol='DOTEUR',
@@ -47,4 +47,4 @@ if(sell_amount_dot >= 0.8):
     if(market_order["fills"][0]["commissionAsset"] == "BNB"):
         print("This order cost " + str(float(market_order["fills"][0]["commission"]) * bnb_price) + " fees in EUR")
 else:
-    print("Sell amount must be greater or equal to 0.8")
+    print("Sell amount must be greater or equal to 0.8 or smaller than your total balance")
