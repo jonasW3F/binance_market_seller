@@ -38,10 +38,8 @@ if(sell_amount_dot >= 0.8 and sell_amount_dot <= dot_balance):
         quantity = sell_amount_dot
         )
     except BinanceAPIException as e:
-    # error handling goes here
         print(e)
     except BinanceOrderException as e:
-    # error handling goes here
         print(e)
     print("You successfully sold " + market_order["executedQty"] + " DOT and earned " + market_order["cummulativeQuoteQty"] + "EUR")
     if(market_order["fills"][0]["commissionAsset"] == "BNB"):
