@@ -41,8 +41,8 @@ if(sell_amount_dot >= 0.8 and sell_amount_dot <= dot_balance):
         print(e)
     except BinanceOrderException as e:
         print(e)
-    print("You successfully sold " + market_order["executedQty"] + " DOT and earned " + market_order["cummulativeQuoteQty"] + "EUR")
+    print("You successfully sold " + market_order["executedQty"] + " DOT and earned " + market_order["cummulativeQuoteQty"] + " EUR")
     if(market_order["fills"][0]["commissionAsset"] == "BNB"):
-        print("This order cost " + str(float(market_order["fills"][0]["commission"]) * bnb_price) + " fees in EUR")
+        print("This order cost " + str(float(market_order["fills"][0]["commission"]) * bnb_price) + " EUR in fees")
 else:
     print("Sell amount must be greater or equal to 0.8 or smaller than your total balance")
