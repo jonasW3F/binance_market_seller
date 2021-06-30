@@ -25,13 +25,13 @@ bnb_amount = bnb_balance*bnb_price
 
 # Information to the user
 print("You currently have " + str(dot_balance) + " DOT as balance. And you have " + str(bnb_amount) + " EUR in BNB tokens to pay fees")
-print("The DOT price is currently " + str(dot_price) + "EUR")
+print("The DOT price is currently " + str(dot_price) + " EUR")
 
 # How much does the user want to sell?
 sell_amount_dot = float(input("How many DOT to you want to sell? "))
 
 # There seems to be a minimum of 0.8 DOT which can be sold
-if(sell_amount_dot >= 0.8 & sell_amount_dot <= dot_balance):
+if(sell_amount_dot >= 0.8 and sell_amount_dot <= dot_balance):
     try:
         market_order = client.order_market_sell(
         symbol='DOTEUR',
