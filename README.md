@@ -10,10 +10,11 @@ This simple script will show you your current DOT balance and the current DOT pr
 ## Installation
 
 ### Set your API keys as environmental variables
-Set your API key as `binance_api` and your secret key as `binance_secret`.
-
+* Get your Binance API keys.
+* Set your API keys as environmental variables. Use `binance_api` for your public key and `binance_secret` for your secret key.
+* Install the binance python library with `pip install python-binance`.
 
 ## Running
-Open the folder containing the script  with your terminal and type:
+Open the folder containing the script with your terminal and type:
 `python3 auto_sell.py`
 
