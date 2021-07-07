@@ -2,8 +2,8 @@ import os
 from binance.client import Client
 from binance.exceptions import BinanceAPIException, BinanceOrderException
 
-api_key = os.environ.get('binance_api')
-api_secret = os.environ.get('binance_secret')
+api_key = os.environ.get('binance_api') # or directly insert your api key
+api_secret = os.environ.get('binance_secret') # or directly insert your api secret
 
 # Initialize Client
 client = Client(api_key, api_secret)
